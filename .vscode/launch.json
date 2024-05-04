@@ -1,0 +1,31 @@
+{
+    /* Ref
+        https://go.microsoft.com/fwlink/?linkid=830387
+        https://code.visualstudio.com/docs/editor/variables-reference
+    */
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "[windows x64] poll_test",
+            "type": "cppvsdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/x64-windows-ninja/debug/sys/poll_test/poll_test.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [],
+        },
+        {
+            "name": "[arm64 osx] poll_test",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/build/arm64-osx-ninja/debug/sys/poll_test/poll_test",
+            "args": [],
+            "stopAtEntry": false,
+            "environment": [
+            ],
+            "cwd": "${workspaceFolder}",
+            "MIMode": "lldb",
+            "targetArchitecture": "arm64",
+        }
+    ]
+}
